@@ -73,6 +73,7 @@ a {
 
 #site-main {
   margin-top: 6em;
+  margin-bottom: 2em;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -116,4 +117,30 @@ table {
   color: white;
   background-color: var(--dark);
   border-color: #32383e;
+}
+
+@media only screen and (max-width: 1024px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid var(--border);
+  }
+
+  td {
+    border: none;
+    position: relative;
+  }
 }
